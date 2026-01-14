@@ -17,6 +17,11 @@ print(f"输入数据维度: {wav.shape}")
 # 计算短时傅里叶变换 (STFT)
 n_fft = 2048  # FFT窗口大小
 hop_length = 512  # 每次移动的样本数
+# 帧数
+# T = （N - n_fft) / hop_size + 1
+# librosa会进行padding
+# T =  N / hop_size + 1
+
 stft = librosa.stft(wav, n_fft=n_fft, hop_length=hop_length)
 
 # 将幅度转换为分贝
