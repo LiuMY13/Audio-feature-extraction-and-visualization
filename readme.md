@@ -95,3 +95,7 @@ Total number of layers:  13
 [B, T, F]
 
 Feature shape:  torch.Size([1, 144, 1024])
+
+不同layer可视化效果：
+
+![MuQ Vis](muq_hidden_states.png)
