@@ -1,4 +1,4 @@
-# 音频特征提取与可视化
+# 音乐音频特征提取与可视化
 
 输入音频：
 
@@ -74,3 +74,24 @@ Input data dimensions: (275760,)
 Output MFCC dimensions: (13, 539)
 
 ![MFCC](MFCC_vis.png)
+
+## MuQ
+
+### Output:
+
+MuQ输出13层隐藏层
+
+• 底层（0-3层）：捕获低级声学特征（音色、音高、频谱细节）
+
+• 中层（4-8层）：提取中级音乐特征（旋律、节奏、和声）
+
+• 高层（9-12层）：编码高级语义信息（流派、情感、结构）
+
+![MuQ Layer](MuQ.png)
+
+Total number of layers:  13
+
+输出特征为3维度：
+[B, T, F]
+
+Feature shape:  torch.Size([1, 144, 1024])
