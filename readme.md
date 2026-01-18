@@ -99,3 +99,13 @@ Feature shape:  torch.Size([1, 144, 1024])
 不同layer可视化效果：
 
 ![MuQ Vis](muq_hidden_states.png)
+
+
+## 音频重建
+
+### Stable Audio 1.0 VAE
+44.1khz 双声道
+
+📢 原音频：[source.wav](0000.wav)
+
+📢 示例音频：[reconstructed_final_vae_fixed.wav](VAE/reconstructed_final_vae_fixed.wav)
